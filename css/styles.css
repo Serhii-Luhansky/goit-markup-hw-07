@@ -55,12 +55,34 @@ body {
 }
 
 /* Свойства контейнера */
-.container {
-  width: 1158px;
-  /* выравнивание по центру */
-  margin: 0 auto;
-  padding: 0 15px;
 
+
+.container {
+  padding-left: 16px;
+  padding-right: 16px;
+
+}
+
+@media screen and (min-width: 428) {
+  .container {
+    width: 428px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
 }
 
 .section {
@@ -68,14 +90,19 @@ body {
 
 }
 
+
+
+
+
+
 /**************** HEADER************ */
 
 .page-header-container {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 15px;
-
+  max-width: 1158px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
 
 }
 
