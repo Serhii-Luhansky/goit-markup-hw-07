@@ -70,16 +70,7 @@ body {
   margin: 0 auto;
 }
 
-/* Features */
 
-.features-list-block {
-  display: none;
-}
-
-.section {
-  padding: 96px 0;
-
-}
 
 
 
@@ -400,12 +391,23 @@ body {
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-/* ************Features *********************/
 
+
+
+/* ************Features *********************/
+.section {
+  padding: 96px 0;
+
+}
 
 .features {
   display: flex;
 }
+
+.features-list-block {
+  display: none;
+}
+
 
 .features-list-description {
   font-size: 16px;
@@ -441,17 +443,10 @@ body {
   text-align: center;
 }
 
+/* ____________________________________________ */
 
 
-
-
-
-/* max-width: 264px;
-  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
-
-
-
-/* *********** Our Works */
+/* *********** Our Works *********************/
 
 .section-title {
   font-weight: 700;
@@ -464,6 +459,8 @@ body {
   margin-bottom: 72px;
 
 }
+
+
 
 /* *********** Our Team********** */
 .team {
@@ -1314,7 +1311,9 @@ body {
   /* ______________________/Features/ ______________________*/
 
 
-
+  .team {
+    padding: 120px 0;
+  }
 
 
 
