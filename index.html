@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WEBSTUDIO</title>
     <!-- Подключение шрифтов тремя link с https://fonts.google.com/ -->
@@ -22,7 +22,7 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="page-header">
+    <!-- <header class="page-header">
       <div class="container page-header-container">
         <nav class="page-nav">
           <a class="logo link" href="./index.html">
@@ -40,6 +40,11 @@
             </li>
           </ul>
         </nav>
+        <button type="button" class="mobile-menu-open js-open-menu" >
+          <svg class="mobile-menu-open_icon" width="32" height="22">
+            <use href="./images/sprite.svg#burger-icon"></use>
+          </svg>
+        </button>
         <address class="address-header">
           <ul class="list page-adress-container">
             <li>
@@ -55,18 +60,84 @@
           </ul>
         </address>
       </div>
-    </header>
-    <main>
-      <!-- Hero -->
-      <!-- <section class="hero">
+      <div class="mobile-menu js-menu-container" >
+        <div class="container mobile-menu_container">
+        <button class="mobile-menu_close-btn js-close-menu" >
+          <svg class="mobile-menu_close-icon" width="24" height="24"
+          >
+            <use href="/images/icons.svg#icon-Vector"></use>
+          </svg>
+        </button>
+        <ul class="mobile-menu-list list">
+          <li class="mobile-menu-item">
+            <a href="./index.html" class="mobile-menu-link link current">Studio</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a href="./portfolio.html" class="mobile-menu-link link">Portfolio</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a href="#" class="mobile-menu-link link">Contacts</a>
+          </li>
+        </ul>
+        <div class="contact-wrapper">
+          <ul class="contacts">
+          <li class="contacts-item">
+            <a href="tel:+110001111111" class="contacts_link_tel">+11 (000) 111-11-11</a>
+          </li>
+          <li class="contacts-item">
+            <a href="mailto:info@devstudio.com" class="contacts_link_mail">info@devstudio.com</a>
+          </li>
+        </ul>
+        </div>
+        <div class="menu-social">
+        <ul class="menu-social-wrap list">
+        <li class="menu-social_item">
+          <a href class="menu-social-link">
+            <svg width="24" height="24" class="menu-social-icon">
+              <use href="./images/icons.svg#icon-instagram"></use>
+            </svg>
+          </a> 
+        </li>
+         <li class="menu-social_item">
+          <a href class="menu-social-link">
+            <svg width="24" height="24" class="menu-social-icon">
+              <use href="./images/icons.svg#icon-twitter"></use>
+            </svg>
+          </a> 
+        </li>
+         <li class="menu-social_item">
+          <a href class="menu-social-link">
+            <svg width="24" height="24" class="menu-social-icon">
+              <use href="./images/icons.svg#icon-facebook"></use>
+            </svg>
+          </a> 
+        </li>
+        <li class="menu-social_item">
+          <a href class="menu-social-link">
+            <svg width="24" height="24" class="menu-social-icon">
+              <use href="./images/icons.svg#icon-linkedin"></use>
+            </svg>
+          </a> 
+        </li>
+
+        </ul>
+        </div>
+
+     
+        </div>
+      </div>
+    </header>  -->
+     <main> 
+      
+     <!-- <section class="hero">
         <div class="container">
           <h1 class="main-title">Effective Solutions for Your Business</h1>
           <button class="modal-btn" type="button" data-modal-open>Order Service</button>
         </div>
       </section> -->
-      <!-- Features -->
-      <!-- <section class="section">
-        <div class="container features">
+    
+      <section class="section">
+                <div class="container features">
           <h2 class="visually-hidden">Features</h2>
           <ul class="list list-wraper">
             <li class="features-item">
@@ -78,8 +149,8 @@
                   </svg>
               </div>
                    
-              <h3 class="list-title">Strategy</h3>
-              <p class="list-description">
+              <h3 class="features-list-title">Strategy</h3>
+              <p class="features-list-description">
                 Our goal is to identify the business problem to walk away with
                 the perfect and creative solution.
               </p>
@@ -93,8 +164,8 @@
              
               </div>
 
-              <h3 class="list-title">Punctuality</h3>
-              <p class="list-description">
+              <h3 class="features-list-title">Punctuality</h3>
+              <p class="features-list-description">
                 Bring the key message to the brand's audience for the best price
                 within the shortest possible time.
               </p>
@@ -107,9 +178,9 @@
               </svg>
             </div>
 
-              <h3 class="list-title">Diligence</h3>
+              <h3 class="features-list-title">Diligence</h3>
 
-              <p class="list-description">
+              <p class="features-list-description">
                 Research and confirm brands that present the strongest digital
                 growth opportunities and minimize risk.
               </p>
@@ -121,17 +192,17 @@
                   <use href="./images/icons.svg#icon-astronaut"></use>
                 </svg>
               </div>
-              <h3 class="list-title">Technologies</h3>
-              <p class="list-description">
+              <h3 class="features-list-title">Technologies</h3>
+              <p class="features-list-description">
                 Design practice focused on digital experiences. We bring forth a
                 deep passion for problem-solving.
               </p>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section> 
       <!-- Our works -->
-      <!-- <section class="works">
+      <section class="works">
         <div class="container">
           <h2 class="section-title">What are we doing</h2>
           <ul class="list list-wraper">
@@ -162,9 +233,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section> 
       <!-- our team -->
-      <!-- <section class="team">
+     <section class="team">
         <div class="container">
           <h2 class="section-title">Our Team</h2>
 
@@ -344,9 +415,9 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section> 
 <!-- -----------------Customers--------------  -->
-      <!-- <section class="customers">
+  <section class="customers">
 <div class="container container-customers">
 <h2 class="section-title">Customers</h2>
 
@@ -392,8 +463,8 @@
 </li>
 </ul>
 </div>
-</section>
- </main> -->
+</section> 
+ </main> 
     <!-- Footer-->
     <!-- <footer class="footer">
       <div class="container container-footer">
@@ -461,12 +532,11 @@
             </form>
          </div>   
                   
-      </div> -->
-
-    <!-- </footer> -->
-    <!-------------Modal window -->
-    <!-- <div class="backdrop is-hidden" data-modal> -->
-      <!-- <div class="modal">
+      </div>  -->
+    <!-- <footer> -->
+    <!-----------Modal window -->
+    <!-- <div class="backdrop is-hidden" data-modal> 
+      <div class="modal">
         <button type="button" class="modal-button" data-modal-close>
           <svg class="modal-btn-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-Vector"></use>
@@ -487,9 +557,9 @@
                   <use href="./images/icons.svg#icon-person"></use>
                 </svg>
               </div>
-            </div> -->
+            </div> 
 
-        <!-- <div class="modal-field">
+        <div class="modal-field">
            <label for="user-tel" class="modal-label">Phone</label>
            <div class="input-wrap">
               <input 
@@ -520,7 +590,7 @@
               <label for="user-comment" class="modal-label">Comment</label>
               <textarea name="user-comment" placeholder="Text input" id="user-comment" class="modal-textarea"></textarea>
                          
-            </div> -->
+            </div>  -->
                   <!-- Checkbox -->
            <!-- <div class="modal-check-text">
               <input type="checkbox" name="user-privacy" id="user-privacy" class="input-check visually-hidden" value="true">
@@ -533,13 +603,15 @@
               I accept the terms and conditions of the
               <a href="#" class="policy">Privacy Policy</a>
             </label>
-           </div> -->
+           </div>  -->
                   <!-- button modal -->
         <!-- <button type="submit" class="modal-send-btn">Send</button>
         </form>
 
       </div>
-   </div>
+   </div> 
+   <script src="./js/mobile-menu.js"></script>
    <script src="./js/modal.js"></script>
+    -->
   </body>
-</html> -->
+</html> 
