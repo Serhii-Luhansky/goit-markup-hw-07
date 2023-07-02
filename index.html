@@ -22,7 +22,7 @@
   </head>
   <body>
     <!-- Header -->
-    <!-- <header class="page-header">
+    <header class="page-header">
       <div class="container page-header-container">
         <nav class="page-nav">
           <a class="logo link" href="./index.html">
@@ -40,7 +40,7 @@
             </li>
           </ul>
         </nav>
-        <button type="button" class="mobile-menu-open js-open-menu" >
+        <button type="button" class="mobile-menu-open" data-menu-open >
           <svg class="mobile-menu-open_icon" width="32" height="22">
             <use href="./images/sprite.svg#burger-icon"></use>
           </svg>
@@ -60,9 +60,9 @@
           </ul>
         </address>
       </div>
-      <div class="mobile-menu js-menu-container" >
+      <div class="mobile-menu" data-menu>
         <div class="container mobile-menu_container">
-        <button class="mobile-menu_close-btn js-close-menu" >
+        <button class="mobile-menu_close-btn" data-menu-close>
           <svg class="mobile-menu_close-icon" width="24" height="24"
           >
             <use href="/images/icons.svg#icon-Vector"></use>
@@ -126,15 +126,15 @@
      
         </div>
       </div>
-    </header>  -->
+    </header> 
      <main> 
       
-     <!-- <section class="hero">
+     <section class="hero">
         <div class="container">
-          <h1 class="main-title">Effective Solutions for Your Business</h1>
+          <h1 class="main-title">Effective Solutions For Your Business</h1>
           <button class="modal-btn" type="button" data-modal-open>Order Service</button>
         </div>
-      </section> -->
+      </section>
     
       <section class="section">
                 <div class="container features">
@@ -202,12 +202,12 @@
         </div>
       </section> 
       <!-- Our works -->
-      <!-- <section class="works">
+      <section class="works">
         <div class="container">
           <h2 class="section-title">What are we doing</h2>
           <ul class="list list-wraper">
             <li class="list-item">
-              <img
+              <img srcset="./images/monitor.jpg 1x, ./images/monitor-2x.jpg 2x"
                 src="./images/monitor.jpg"
                 alt="monitor"
                 width="360"
@@ -215,7 +215,7 @@
               />
             </li>
             <li class="list-item">
-              <img
+              <img srcset="./images/messenger.jpg 1x, ./images/messenger-2x.jpg 2x"
                 src="./images/messenger.jpg"
                 alt="massenger"
                 width="360"
@@ -223,17 +223,16 @@
               />
             </li>
             <li class="list-item">
-              <img
+              <img srcset="./images/telefon.jpg 1x, ./images/telefon-2x.jpg 2x"
                 src="./images/telefon.jpg"
-                alt="telefon 
-            "
+                alt="telefon"
                 width="360"
                 height="300"
               />
             </li>
           </ul>
         </div>
-      </section>  -->
+      </section> 
       <!-- our team -->
      <section class="team">
         <div class="container">
@@ -241,7 +240,7 @@
 
           <ul class="list list-wraper">
             <li class="team-member">
-              <img
+              <img srcset="./images/first.jpg 1x, ./images/mark_2x.jpg 2x"
                 src="./images/first.jpg"
                 alt="designer"
                 width="264"
@@ -285,7 +284,7 @@
             </li>
             
             <li class="team-member">
-              <img
+              <img srcset="./images/second.jpg 1x, ./images/tom-ford-2x.jpg 2x"
                 src="./images/second.jpg"
                 alt="developer"
                 width="264"
@@ -328,7 +327,7 @@
             </div>
             </li>
             <li class="team-member">
-              <img
+              <img srcset="./images/third.jpg 1x, ./images/gamila-garsia-2x.jpg 2x"
                 src="./images/third.jpg"
                 alt="marketing"
                 width="264"
@@ -371,7 +370,7 @@
             </div>
             </li>
             <li class="team-member">
-              <img
+              <img srcset="./images/last.jpg 1x, ./images/daniel-wilson-2x.jpg 2x"
                 src="./images/last.jpg"
                 alt="UI Designer"
                 width="264"
@@ -466,7 +465,7 @@
 </section> 
  </main> 
     <!-- Footer-->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container container-footer">
         <div class="footer-left-box">
         <a class="logo link footer-logo" href="./index.html">
@@ -532,8 +531,8 @@
             </form>
          </div>   
                   
-      </div>  -->
-    <!-- <footer> -->
+      </div> 
+    <footer>
     <!-----------Modal window -->
     <!-- <div class="backdrop is-hidden" data-modal> 
       <div class="modal">
@@ -591,6 +590,8 @@
               <textarea name="user-comment" placeholder="Text input" id="user-comment" class="modal-textarea"></textarea>
                          
             </div>  -->
+
+
                   <!-- Checkbox -->
            <!-- <div class="modal-check-text">
               <input type="checkbox" name="user-privacy" id="user-privacy" class="input-check visually-hidden" value="true">
@@ -603,15 +604,16 @@
               I accept the terms and conditions of the
               <a href="#" class="policy">Privacy Policy</a>
             </label>
-           </div>  -->
+           </div>   -->
                   <!-- button modal -->
-        <!-- <button type="submit" class="modal-send-btn">Send</button>
+      <!-- <button type="submit" class="modal-send-btn">Send</button>
         </form>
 
       </div>
-   </div> 
+   </div>  -->
+   <!-- <script src="./js/modal.js"></script> -->
    <script src="./js/mobile-menu.js"></script>
-   <script src="./js/modal.js"></script>
-    -->
+   
+  
   </body>
 </html> 
