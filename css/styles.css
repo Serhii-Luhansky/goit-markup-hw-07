@@ -119,10 +119,7 @@ body {
   color: #2E2F42;
 }
 
-.current {
-  position: relative;
-  color: #404BBF;
-}
+
 
 .contacts_link_tel {
   font-size: 36px;
@@ -196,7 +193,10 @@ body {
 
 
 
-
+.current {
+  position: relative;
+  color: #404BBF;
+}
 
 
 
@@ -452,7 +452,7 @@ body {
   text-align: center;
 }
 
-/* ____________________________________________ */
+/* ___________________________________ */
 
 
 /* *********** Our Works *********************/
@@ -760,11 +760,35 @@ body {
 
 
 
+.footer-icons-svg:focus,
+.footer-icons-svg:hover {
+  background-color: #31d0aa;
+}
+
+.footer-btn:is(:hover, :focus) {
+  background-color: #404bbf;
+
+}
+
+.footer-btn:is(:hover, :focus) {
+  background-color: #404bbf;
+
+}
+
+.footer-icon {
+  fill: var(--cloud);
+}
 
 
 
-
-
+.footer-input::placeholder {
+  color: #FFFFFF;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+}
 
 
 /* .footer {
@@ -809,10 +833,7 @@ body {
 
 
 
-.footer-icons-svg:focus,
-.footer-icons-svg:hover {
-  background-color: #31d0aa;
-}
+
 
 .footer-icon {
   fill: var(--cloud);
@@ -858,15 +879,6 @@ body {
 
 }
 
-
-.footer-input::placeholder {
-  color: #FFFFFF;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 2;
-  letter-spacing: 0.04em;
-}
 
 .subscribe-btn-icon {
   fill: #ffffff;
@@ -1005,7 +1017,9 @@ body {
 
 
 /* ********Modal window */
-/* .backdrop {
+
+
+.backdrop {
   position: fixed;
   top: 0;
   z-index: 999;
@@ -1161,10 +1175,11 @@ body {
 
 .modal-textarea:focus {
   border-color: #4d5ae5;
-} */
+}
+
 
 /* ****************** Checkbox************ */
-/* .modal-check-text {
+.modal-check-text {
   margin-bottom: 24px;
 }
 
@@ -1197,7 +1212,7 @@ body {
   fill: transparent;
   transition: background-color var(--transition), border var(--transition),
     fill var(--transition);
-} 
+}
 
 .input-check:checked+.check-text span {
   background-color: #404BBF;
@@ -1211,7 +1226,7 @@ body {
 }
 
 
-/* .modal-send-btn {
+.modal-send-btn {
   display: block;
   font-weight: 500;
   font-size: 16px;
@@ -1228,12 +1243,13 @@ body {
   margin: 0 auto;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   transition: background-color var(--transition);
-} */
+}
 
-/* .modal-send-btn:hover,
+.modal-send-btn:hover,
 .modal-send-btn:focus {
 
-  background-color: #404BBF;} */
+  background-color: #404BBF;
+}
 
 
 /************************* Media **********************/
@@ -1242,10 +1258,12 @@ body {
   .container {
     max-width: 428px;
   }
+
+
+  .modal {
+    width: 392px;
+  }
 }
-
-
-
 
 @media screen and (min-width: 768px) {
   .container {
@@ -1434,30 +1452,33 @@ body {
         url(../images/Hero-tab-2x.jpg);
     }
   }
-}
-
-/* _____________________________Hero_________________________________ */
 
 
+  /* _____________________________Hero_________________________________ */
 
 
-/* .mobile-menu-open {
+  /* .mobile-menu-open {
   display: none;
 } */
 
 
 
-/* .list-title {
+  /* .list-title {
   text-align: center;
 
 } */
 
+  /* _______________________________________________________ */
 
 
+  /* **********************Modal *********************/
 
 
+  .modal {
+    width: 408px;
 
-/* _______________________________________________________ */
+  }
+}
 
 @media screen and (min-width: 1158px) {
 
@@ -1640,8 +1661,12 @@ body {
     margin-top: 48px;
   }
 
-}
 
+  .modal {
+    top: 50%;
+
+  }
+}
 
 
 
@@ -1733,25 +1758,31 @@ body {
 
 
   .mobile-menu_container {
-    /* position: relative;
+    position: relative;
     padding-top: 80px;
     padding-bottom: 40px;
     padding-left: 40px;
-    overflow: auto; */
-    position: fixed;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
+    overflow: auto;
     top: 0;
     left: 0;
     z-index: 2;
     width: 100vw;
     height: 100vh;
     background-color: #fff;
-    padding: 80px 40px 40px 40px;
+    display: flex;
+    justify-content: space-between;
+    /* position: fixed; */
+
+    /* flex-direction: column;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    width: 100vw;
+    height: 100vh;
+    background-color: #fff;
+    padding: 80px 40px 40px 40px; */
     transform: translateX(0);
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
 
   }
 
